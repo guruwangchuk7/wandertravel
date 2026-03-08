@@ -16,7 +16,7 @@ const Home = () => {
         <Hero />
 
         {/* Featured/Trending Destinations Section */}
-        <section className="section-padding px-6 max-w-[1440px] mx-auto mt-20">
+        <section className="section-padding px-6 max-w-[1440px] mx-auto mt-48 md:mt-24">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 px-2 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading text-primary tracking-tight font-medium">Trending Destinations</h2>
@@ -49,7 +49,7 @@ const Home = () => {
         {/* Value Proposition (Why Choose Us) */}
         <section className="section-padding bg-bg-alt mt-12 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
+            <div className="text-center mb-16 md:mb-24">
               <h2 className="text-3xl md:text-5xl text-primary mb-6 tracking-tight font-heading font-medium leading-tight">The WanderVista Promise</h2>
               <p className="text-secondary max-w-2xl mx-auto font-light text-lg tracking-wide leading-relaxed">Elevate your travel experience with our dedicated support, exclusive access, and uncompromising guarantees.</p>
             </div>
@@ -87,22 +87,22 @@ const Home = () => {
         </div>
 
         {/* Newsletter Integrated into Design */}
-        <section className="py-32 px-6 bg-primary text-white mx-4 md:mx-12 lg:mx-24 mb-32 overflow-hidden relative rounded-3xl">
+        <section className="py-20 md:py-32 px-4 md:px-6 bg-primary text-white mx-4 md:mx-12 lg:mx-24 mb-16 md:mb-32 overflow-hidden relative rounded-3xl">
           <div className="absolute inset-0 bg-[url('/paro-taksang.jpg')] opacity-20 bg-cover bg-center grayscale mix-blend-overlay" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
 
-          <div className="max-w-3xl mx-auto text-center relative z-10 glass-panel !bg-primary/40 !border-white/10 p-10 md:p-16 rounded-[2rem]">
-            <h2 className="text-3xl md:text-5xl font-heading font-medium mb-6">Join Our Insider Circle</h2>
-            <p className="text-white/70 text-lg mb-10 font-light tracking-wide">Subscribe for exclusive travel guides, curated itineraries, and limited-time offers, sent straight to your inbox.</p>
+          <div className="max-w-3xl mx-auto text-center relative z-10 glass-panel !bg-primary/40 !border-white/10 p-8 md:p-16 rounded-[2rem]">
+            <h2 className="text-2xl md:text-5xl font-heading font-medium mb-4 md:mb-6">Join Our Insider Circle</h2>
+            <p className="text-white/70 text-base md:text-lg mb-8 md:mb-10 font-light tracking-wide">Subscribe for exclusive travel guides and limited-time offers.</p>
 
-            <form className="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+            <form className="flex flex-col md:flex-row gap-3 md:gap-4 max-w-xl mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email address"
-                className="flex-1 bg-white/5 border border-white/20 rounded-full px-8 py-4 text-white placeholder-white/50 outline-none focus:bg-white/10 transition-all font-light"
+                placeholder="Email address"
+                className="flex-1 bg-white/5 border border-white/20 rounded-full px-6 md:px-8 py-3 md:py-4 text-white placeholder-white/50 outline-none focus:bg-white/10 transition-all font-light text-sm md:text-base"
               />
               <button
-                className="btn-accent !px-10"
+                className="btn-accent !px-8 md:!px-10 !py-3 md:!py-4"
                 onClick={(e) => { e.preventDefault(); alert('Subscribed!') }}
               >
                 Subscribe

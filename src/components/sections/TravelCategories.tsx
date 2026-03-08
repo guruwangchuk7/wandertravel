@@ -14,12 +14,12 @@ const TravelCategories = () => {
     return (
         <section className="section-padding bg-white overflow-hidden border-y border-gray-50">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-24">
-                    <span className="text-accent font-semibold tracking-[0.3em] uppercase text-[10px] mb-6 block">Explore By Experience</span>
-                    <h2 className="text-5xl md:text-6xl font-heading font-medium tracking-tight text-primary mb-8">
+                <div className="text-center mb-16 md:mb-24">
+                    <span className="text-accent font-semibold tracking-[0.3em] uppercase text-[10px] mb-4 md:mb-6 block">Explore By Experience</span>
+                    <h2 className="text-3xl md:text-6xl font-heading font-medium tracking-tight text-primary mb-6 md:mb-8">
                         Journey by <span className="italic font-normal">Intent</span>
                     </h2>
-                    <p className="text-secondary text-lg font-light tracking-wide leading-relaxed max-w-xl mx-auto">
+                    <p className="text-secondary text-base md:text-lg font-light tracking-wide leading-relaxed max-w-xl mx-auto px-4">
                         Choose your path based on what your soul seeks. Each category offers a unique perspective of Bhutan.
                     </p>
                 </div>
@@ -32,13 +32,13 @@ const TravelCategories = () => {
                             whileInView={{ opacity: 1 }}
                             transition={{ delay: idx * 0.05 }}
                             whileHover={{ backgroundColor: '#FAFAFA' }}
-                            className={`p-10 flex flex-col items-center text-center cursor-pointer transition-all border-r border-b lg:border-b-0 border-primary/5 last:border-r-0 group`}
+                            className={`p-6 md:p-10 flex flex-col items-center text-center cursor-pointer transition-all border-r border-b lg:border-b-0 border-primary/5 last:border-r-0 group`}
                         >
-                            <div className="p-4 rounded-full bg-bg-alt text-primary mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:text-white group-hover:shadow-lg">
-                                <cat.icon className="w-5 h-5 transition-colors" />
+                            <div className="p-3 md:p-4 rounded-full bg-bg-alt text-primary mb-4 md:mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:text-white group-hover:shadow-lg">
+                                <cat.icon className="w-4 h-4 md:w-5 md:h-5 transition-colors" />
                             </div>
-                            <h4 className="font-heading font-medium text-lg mb-2 text-primary tracking-wide">{cat.name}</h4>
-                            <span className="text-[9px] font-medium uppercase tracking-[0.2em] text-secondary/60">
+                            <h4 className="font-heading font-medium text-base md:text-lg mb-1 md:mb-2 text-primary tracking-wide">{cat.name}</h4>
+                            <span className="text-[8px] md:text-[9px] font-medium uppercase tracking-[0.2em] text-secondary/60">
                                 {cat.count} Options
                             </span>
                         </motion.div>
